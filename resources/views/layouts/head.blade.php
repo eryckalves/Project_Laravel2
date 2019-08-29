@@ -16,6 +16,16 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
+
+<!-- Styles -->
+<style>
+.marcador{
+    background-color: #f8f9fa;
+    border-radius:5px
+}
+</style>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
@@ -25,16 +35,16 @@
         </a>  
         <div class="collapse navbar-collapse pl-5 h4" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="{{Request::is('/') ? 'active' : null }}">
+                <li class="{{Request::is('/') ? 'active' : null }} {{Request::is('/') ? 'marcador' : null }}">
                     <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(Página atual)</span></a>
                 </li>
-                <li class="{{Request::is('/sobre') ? 'active' : null }}">
+                <li class="{{Request::is('sobre') ? 'active' : null }} {{Request::is('sobre') ? 'marcador' : null }}">
                     <a class="nav-link" href="{{url('/sobre')}}">Sobre</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{Request::is('galeria') ? 'active' : null }} {{Request::is('galeria') ? 'marcador' : null }}">
                     <a class="nav-link" href="{{url('/galeria')}}">Galeria</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{Request::is('contato') ? 'active' : null }} {{Request::is('contato') ? 'marcador' : null }}">
                     <a class="nav-link" href="/contato">Contato</a>
                 </li>
                 <li class="nav-item dropdown">
