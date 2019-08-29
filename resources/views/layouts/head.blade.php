@@ -21,9 +21,9 @@
     <div class="container">
         <a class="navbar-brand d-flex" href="{{ url('/') }}">
             <div><img src="/imagens/Logodefault.jpg" style="height:22px; border-right:1px solid #333333;" class="pr-3 pt-1"></div>
-            <div class="pl-3">BlasterMaster</div>
+            <div class="pl-3 h4">BlasterMaster</div>
         </a>  
-        <div class="collapse navbar-collapse pl-5" id="navbarNav">
+        <div class="collapse navbar-collapse pl-5 h4" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="{{Request::is('/') ? 'active' : null }}">
                     <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(Página atual)</span></a>
