@@ -17,3 +17,5 @@
 
 Route::get('/','UserhomepageController@index');
 Route::get('/sobre','sobrehomepageController@view');
+Route::get('/galeria','galeriahomepageController@view');
+Route::get('/contato','contatohomepageController@view');
